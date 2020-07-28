@@ -1,0 +1,6 @@
+; This is the Calva evaluation results output window.
+; Leave it open, please. Because quirks.
+; In ClojureScript projects, use the command *Calva: Toggle REPL connection* to choose which REPL to use (clj or cljs).
+; Please see https://calva.io/output/ for docs. Happy coding!
+
+clj::user=> 
