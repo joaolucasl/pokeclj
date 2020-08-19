@@ -1,8 +1,11 @@
 (ns pokeclj.handler
-  (:require [compojure.core :refer :all]
-            [pokeclj.controller :as controller]
-            [compojure.route :as route]
-            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
+   (:require [compojure.core :refer :all]
+             [pokeclj.controller :as controller]
+             [compojure.route :as route]
+             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
+             [pokeclj.db.db :as db]))
+
+(db/load-data)
 
 (defroutes app-routes
   (GET "/" [] "Hello World")
