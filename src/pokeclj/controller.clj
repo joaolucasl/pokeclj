@@ -1,3 +1,3 @@
-(ns pokeclj.controller (:require [pokeclj.db.db :as db] [clojure.data.json :as json]))
+(ns pokeclj.controller (:require [pokeclj.db.db :as db] [ring.util.response :refer [response]]))
 
-(defn species [] (json/write-str (:pokemons @db/data)))
+(defn species []  (response { :pokemons (:pokemons @db/data) }) )
